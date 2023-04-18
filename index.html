@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1><img src="images/odin-logo.png" alt="odin-logo"> ODIN </h1>
+    </header>
+    <main>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, nostrum voluptatibus! 
+            Placeat quod quos sunt quam. Reprehenderit expedita perspiciatis debitis praesentium 
+            placeat ipsam maxime. Libero!
+        </p>
+        <p>You know what you want.</p>
+        <form action="" method="post">
+            <h2>Let's do this</h2>
+            <div>
+                <label for="firstName">FIRST NAME:</label>
+                <input type="text" name="firstName" id="firstName" autofocus placeholder="firstname" required>
+            </div>
+            <div>
+                <label for="lastName">LAST NAME:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="lastname" required>
+            </div>
+            <div>
+                <label for="email">EMAIL:</label>
+                <input type="email" name="email" id="email" inputmode="email" placeholder="example@domain.com" required>
+            </div>
+            <div>
+                <label for="phoneNumber">PHONE NUMBER:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" inputmode="tel" pattern="[6789]\d{9}" required>
+            </div>
+            <div>
+                <label for="password">PASSWORD:</label>
+                <input type="password" id="password" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$" required minlength="8" maxlength="20">
+            </div>
+            <div>
+                <label for="confirmPassword">CONFIRM PASSWORD:</label>
+                <input type="password" id="confirmPassword" required>
+            </div>
+            <div>
+                <button type="submit">Create Account</button>
+                <p>Already hava an account? <a href="#">Log in.</a> </p>
+            </div>
+        </form>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
