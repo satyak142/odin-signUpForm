@@ -28,11 +28,11 @@
             <h3>Let's do this!</h3>
             <div>
                 <label for="firstName">FIRST NAME:</label>
-                <input type="text" name="firstName" id="firstName" autofocus placeholder="firstname" required>
+                <input type="text" name="firstName" id="firstName" placeholder="firstname" title="Please enter your first name" required>
             </div>
             <div>
                 <label for="lastName">LAST NAME:</label>
-                <input type="text" name="lastName" id="lastName" placeholder="lastname" required>
+                <input type="text" name="lastName" id="lastName" placeholder="lastname" title="Please enter your last name" required>
             </div>
             <div>
                 <label for="email">EMAIL:</label>
@@ -40,15 +40,15 @@
             </div>
             <div>
                 <label for="phoneNumber">PHONE NUMBER:</label>
-                <input type="tel" id="phoneNumber" name="phoneNumber" inputmode="tel" pattern="[6789]\d{9}" required>
+                <input type="tel" id="phoneNumber" name="phoneNumber" inputmode="tel" pattern="[6789]\d{9}" title="Please enter your mobile number" required>
             </div>
             <div>
                 <label for="password">PASSWORD:</label>
-                <input type="password" id="password" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$" required minlength="8" maxlength="20">
+                <input type="password" id="password" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$" title="At least 8 charecters with a capital letter, special charecter, number and small letter" required minlength="8" maxlength="20">
             </div>
             <div>
                 <label for="confirmPassword">CONFIRM PASSWORD:</label>
-                <input type="password" id="confirmPassword" required>
+                <input type="password" id="confirmPassword"  title="Passwords don't match" required>
             </div>
             <div>
                 <button type="submit">Create Account</button>
